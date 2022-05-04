@@ -64,52 +64,6 @@
             <div class="clearfix"></div>
         </div>
     </div>
-    <div class="banner-grid">
-        <div id="visual">
-            <div class="slide-visual">
-                <ul class="slide-group">
-                    <li><img class="img-responsive" src="images/ba1.jpg" alt="Dummy Image" /></li>
-                    <li><img class="img-responsive" src="images/ba2.jpg" alt="Dummy Image" /></li>
-                    <li><img class="img-responsive" src="images/ba3.jpg" alt="Dummy Image" /></li>
-                </ul>
-                <div class="script-wrap">
-                    <ul class="script-group">
-                        <li><div class="inner-script">
-                                <img class="img-responsive" src="images/baa1.jpg" alt="Dummy Image" />
-                            </div></li>
-                        <li><div class="inner-script">
-                                <img class="img-responsive" src="images/baa2.jpg" alt="Dummy Image" />
-                            </div></li>
-                        <li><div class="inner-script">
-                                <img class="img-responsive" src="images/baa3.jpg" alt="Dummy Image" />
-                            </div></li>
-                    </ul>
-                    <div class="slide-controller">
-                        <a href="#" class="btn-prev"><img src="images/btn_prev.png"
-                                                          alt="Prev Slide" /></a> <a href="#" class="btn-play"><img
-                                src="images/btn_play.png" alt="Start Slide" /></a> <a href="#"
-                                                                              class="btn-pause"><img src="images/btn_pause.png"
-                                               alt="Pause Slide" /></a> <a href="#" class="btn-next"><img
-                                src="images/btn_next.png" alt="Next Slide" /></a>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <script type="text/javascript" src="js/pignose.layerslider.js"></script>
-        <script type="text/javascript">
-            $(window).load(function () {
-                $('#visual').pignoseLayerSlider({
-                    play: '.btn-play',
-                    pause: '.btn-pause',
-                    next: '.btn-next',
-                    prev: '.btn-prev'
-                });
-            });
-        </script>
-    </div>
-    <br/>
     <div class="product-easy">
         <div class="container">
             <div class="container">
