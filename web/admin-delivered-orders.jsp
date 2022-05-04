@@ -51,6 +51,7 @@
                                                     <th>Total Amount</th>
                                                     <th>Status</th>
                                                     <th>Date</th>
+                                                    <th>Shipping Address</th>
                                                     <th>Payment Mode</th>
                                                 </tr>
                                             </thead>
@@ -82,6 +83,7 @@
                                                 %>
                                                 <td><%=resultOrders.getString(16)%></td>
                                                 <td><%=resultOrders.getString(17)%></td>
+                                                <td><%=resultOrders.getString(18)%></td>
                                             </tr>
                                         </tbody>
                                         <%

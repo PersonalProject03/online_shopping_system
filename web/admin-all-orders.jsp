@@ -50,6 +50,7 @@
                                                     <th>Total Amount</th>
                                                     <th>Status</th>
                                                     <th>Order Date & Time</th>
+                                                    <th>Shipping Address</th>
                                                     <th>Payment Mode</th>
                                                     <th>Action</th>
                                                 </tr>
@@ -81,6 +82,7 @@
                                                 %>
                                                 <td><%=resultOrders.getString(16)%></td>
                                                 <td><%=resultOrders.getString(17)%></td>
+                                                <td><%=resultOrders.getString(18)%></td>
                                                 <%
                                                     if (resultOrders.getString(15).equals("Deliver")) {
                                                 %>

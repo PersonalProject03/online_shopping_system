@@ -34,6 +34,7 @@ public class GetProductOrders extends HttpServlet {
         String product_selling_price = null;
         String product_total_price = null;
         String order_status = null;
+        String shipping_add = request.getParameter("shipping_add");
         String payment_mode = request.getParameter("payment");
         HttpSession session = request.getSession();
         //Storing payment attrbute in session
@@ -60,12 +61,12 @@ public class GetProductOrders extends HttpServlet {
                 order_status = "Pending";
                 //Inserting product details inside the table
                 orderProducts = DatabaseConnection.insertUpdateFromSqlQuery(
-                        "insert into tblorders(order_no,customer_name,mobile_number,email_id,address,address_type,pincode,image,product_name,quantity,product_price,product_selling_price,product_total_price,order_status,payment_mode,payment_id) values('"
+                        "insert into tblorders(order_no,customer_name,mobile_number,email_id,address,address_type,pincode,image,product_name,quantity,product_price,product_selling_price,product_total_price,order_status,shipping_add,payment_mode,payment_id) values('"
                         + order_no + "','" + customerName + "','" + mobile_number + "','"
                         + email_id + "','" + address + "','" + address_type + "','" + pincode + "','" + image_name + "','"
                         + product_name + "','" + quantity + "','" + product_price + "','"
                         + product_selling_price + "','" + product_total_price + "','" + order_status + "','"
-                        + payment_mode + "','" + paymentId + "')");
+                        + shipping_add + "','" + payment_mode + "','" + paymentId + "')");
             }
             DatabaseConnection.insertUpdateFromSqlQuery("delete from tblcart where customer_id='" + session.getAttribute("id") + "'");
             if (orderProducts > 0) {

@@ -87,6 +87,7 @@
                                 <th>Selling Price($)</th>
                                 <th>Total Price($)</th>
                                 <th>Order Date</th>
+                                <th>Shipping Address</th>
                                 <th>Status</th>
                             </tr>
                         </thead>
@@ -99,13 +100,14 @@
                         %>
                         <tr class="rem1">
                             <td class="invert"><%=index%></td>
-                            <td class="invert"><%=totalProduct.getInt(18)%></td>
+                            <td class="invert"><%=totalProduct.getInt(19)%></td>
                             <td class="invert"><img src=uploads/<%=totalProduct.getString(9)%> style="width: 150px; height: 100px;"><br><%=totalProduct.getString(10)%></td>
                             <td class="invert"><%=totalProduct.getString(11)%></td>
                             <td class="invert"><del><%=totalProduct.getString(12)%></del></td>
                             <td class="invert"><%=totalProduct.getString(13)%></td>
                             <td class="invert"><%=totalProduct.getString(14)%></td>
                             <td class="invert"><%=totalProduct.getString(16)%></td>
+                            <td class="invert"><%=totalProduct.getString(17)%></td>
                             <%
                                 //If order is delivered
                                 if (totalProduct.getString(15).equals("Deliver")) {

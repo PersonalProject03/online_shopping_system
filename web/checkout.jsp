@@ -219,14 +219,17 @@
                                 <option>Commercial</option>
                             </select>
                         </div>
+                            <h4>
+                                <font color="blue"><strong>Shipping Address</strong></font>
+                            </h4>
+                            <br>
+                        <div class="form-group">
+                            <label>Full Address</label> <input type="text" name="shipping_add" placeholder="" required="" style="width: 1135px; height: 100px;" class="form-control">
+                        </div>
                         <div class="form-group">
                             <label>Select Payment Mode</label> <select name="payment"
                                                                        style="width: 1135px; height: 40px;" class="form-control">
                                 <option>COD</option>
-                                <option>Credit Card</option>
-                                <option>Debit Card</option>
-                                <option>Online Banking</option>
-                                <option>UPI Id</option>
                             </select>
                         </div>
                         <div>
