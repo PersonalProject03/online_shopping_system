@@ -47,7 +47,7 @@
                                                     <th>Image</th>
                                                     <th>Description</th>
                                                     <th>MRP(Rs)</th>
-                                                    <th>Price (Rs)</th>
+                                                    <th>Price(Rs)</th>
                                                     <th>Date</th>
                                                     <th>Status</th>
                                                     <th>Action</th>

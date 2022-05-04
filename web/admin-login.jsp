@@ -29,7 +29,6 @@
                         <div class="navbar-collapse collapse ">
                             <ul id="menu-top" class="nav navbar-nav navbar-right">
                                 <li><a href="index.jsp">Home</a></li>
-                                <li><a href="admin-login.jsp">Admin Login</a></li>
                             </ul>
                         </div>
                     </div>

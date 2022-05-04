@@ -1,4 +1,3 @@
-
 import java.io.IOException;
 import java.sql.ResultSet;
 import javax.servlet.ServletException;
@@ -9,10 +8,12 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.connection.DatabaseConnection;
+import java.sql.SQLException;
 
 @WebServlet("/CustomerLogin")
 public class CustomerLogin extends HttpServlet {
 
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -49,8 +50,7 @@ public class CustomerLogin extends HttpServlet {
                 response.sendRedirect("customer-login.jsp");
             }
 
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (IOException | SQLException e) {
         }
     }
 }

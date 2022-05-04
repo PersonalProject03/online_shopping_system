@@ -72,9 +72,7 @@
                 <h3>My Orders</h3>
             </div>
         </div>
-        <div class="checkout">
             <div class="container">
-                <h3>My Orders</h3>
                 <div class="table-responsive">
                     <table class="table table-bordered">
                         <thead>
@@ -138,7 +136,6 @@
                         </script>
                     </table>
                 </div>
-            </div>
         </div>
         <jsp:include page="footer.jsp"></jsp:include>
         <%

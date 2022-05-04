@@ -1,4 +1,3 @@
-
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -13,6 +12,7 @@ import com.connection.DatabaseConnection;
 @WebServlet("/AddCustomer")
 public class AddCustomer extends HttpServlet {
 
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -49,8 +49,7 @@ public class AddCustomer extends HttpServlet {
                 //Sending response back to the user/customer
                 response.sendRedirect("customer-register.jsp");
             }
-        } catch (Exception ex) {
-            ex.printStackTrace();
+        } catch (IOException ex) {
         }
     }
 }

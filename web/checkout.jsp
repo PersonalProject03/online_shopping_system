@@ -130,7 +130,7 @@
                             <td class="invert"><%=totalProduct.getString(6)%>&nbsp;Rs.</td>
                             <td class="invert"><a
                                     href="removeProductFromCart.jsp?productId=<%=totalProduct.getInt(7)%>"
-                                    onclick="return confirm('Are you sure you want to remove this item from cart?');"><i
+                                    onclick="return confirm('Do you want to remove this item from cart?');"><i
                                         class="fa fa-trash"></i></a></td>
                         </tr>
                         <%
@@ -241,7 +241,7 @@
                                 }
                             %>
                             <input type="text" name="payment_id" value="<%=paymentId%>" hidden>
-                            <input type="submit" value="Buy Products" class="btn btn-success" onclick="return confirm('Are you sure Do you want to buy this order?');">
+                            <input type="submit" value="Buy Products" class="btn btn-success" onclick="return confirm('Do you want to buy this order?');">
                         </div>
                     </div>
                 </form>

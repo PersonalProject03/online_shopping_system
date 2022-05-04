@@ -1,4 +1,3 @@
-
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -37,8 +36,7 @@ public class AddToCart extends HttpServlet {
                 }
             }
 
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (IOException e) {
         }
     }
 }

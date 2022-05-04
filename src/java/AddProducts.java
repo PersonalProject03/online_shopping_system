@@ -1,4 +1,3 @@
-
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -93,8 +92,7 @@ public class AddProducts extends HttpServlet {
                         //Response send to the admin-add-product.jsp
                         response.sendRedirect("admin-add-product.jsp");
                     }
-                } catch (Exception e) {
-                    e.printStackTrace();
+                } catch (IOException e) {
                 }
             } catch (Exception ex) {
                 //If any occur occured

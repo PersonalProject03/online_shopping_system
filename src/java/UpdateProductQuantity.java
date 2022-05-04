@@ -1,5 +1,3 @@
-
-
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,6 +11,14 @@ import com.connection.DatabaseConnection;
 @WebServlet("/UpdateProductQuantity")
 public class UpdateProductQuantity extends HttpServlet {
 
+    /**
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //Getting all the data from the user/cutomer
         int quantity = Integer.parseInt(request.getParameter("quantity"));
@@ -41,8 +47,7 @@ public class UpdateProductQuantity extends HttpServlet {
                  //Sending response back to the user/customer.
                 response.sendRedirect("checkout.jsp");
             }
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (IOException | NumberFormatException | SQLException e) {
         }
     }
 }

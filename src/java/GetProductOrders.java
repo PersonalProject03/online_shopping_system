@@ -1,4 +1,3 @@
-
 import com.connection.DatabaseConnection;
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -77,7 +76,7 @@ public class GetProductOrders extends HttpServlet {
             } else {
                 response.sendRedirect("checkout.jsp");
             }
-        } catch (Exception e) {
+        } catch (IOException | SQLException e) {
             System.out.println(e);
         }
     }

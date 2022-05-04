@@ -16,8 +16,7 @@ public class DatabaseConnection {
             //Registering with mysql Driver
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/productsite", "root", "");
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (ClassNotFoundException | SQLException e) {
         }
         return (connection);
     }
@@ -29,7 +28,6 @@ public class DatabaseConnection {
                 connection.close();
                 connection = null;
             } catch (SQLException ex) {
-                ex.printStackTrace();
             }
         }
     }
@@ -45,8 +43,7 @@ public class DatabaseConnection {
             }
             //Querying the query
             rs = connection.createStatement().executeQuery(SqlQueryString);
-        } catch (Exception ex) {
-            ex.printStackTrace();
+        } catch (SQLException ex) {
         }
         return rs;
     }
@@ -62,8 +59,7 @@ public class DatabaseConnection {
             //Querying the query
             i = connection.createStatement().executeUpdate(SqlQueryString);
 
-        } catch (Exception ex) {
-            ex.printStackTrace();
+        } catch (SQLException ex) {
         }
         return i;
     }

@@ -21,6 +21,7 @@
 </head>
 <body>
 <body>
+    <title>Online Shopping System</title>
     <div class="ban-top">
         <div class="container">
             <div class="top_nav_left">
@@ -85,8 +86,7 @@
                                        src="uploads/<%=retriveProduct.getString("image_name")%>"
                                        alt="" class="pro-image-front"> <img
                                        src="uploads/<%=retriveProduct.getString("image_name")%>"
-                                       alt="" class="pro-image-back"> <span
-                                       class="product-new-top">New</span>
+                                       alt="" class="pro-image-back">
                             </div>
                             <div class="item-info-product ">
                                 <h4>
@@ -96,12 +96,10 @@
                                     Category: <%=retriveProduct.getString("product_category")%>
                                 </h5>
                                 <div class="info-product-price">
-                                    <input type="hidden" name="price"
-                                           value="<%=retriveProduct.getString("price")%>"> <input
-                                           type="hidden" name="mrp_price"
-                                           value="<%=retriveProduct.getString("mrp_price")%>"> <span
-                                           class="item_price"><%=retriveProduct.getString("price")%> Rs.</span>
-                                    <del><%=retriveProduct.getString("mrp_price")%> Rs.</del>
+                                    <input type="hidden" name="price" value="<%=retriveProduct.getString("price")%>">
+                                    <input type="hidden" name="mrp_price" value="<%=retriveProduct.getString("mrp_price")%>">
+                                    <del>Rs.<%=retriveProduct.getString("mrp_price")%></del> <br/>
+                                    <span class="item_price">Rs.<%=retriveProduct.getString("price")%></span>
                                 </div>
                                 <input type="submit" value="Add to cart" class="btn btn-warning" onclick="return confirm('Are you sure Do you want to add this item in cart?');">
                             </div>

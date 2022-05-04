@@ -1,4 +1,3 @@
-
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -12,10 +11,12 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.connection.DatabaseConnection;
+import java.sql.SQLException;
 
 @WebServlet("/AdminLogin")
 public class AdminLogin extends HttpServlet {
 
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try {
@@ -47,7 +48,7 @@ public class AdminLogin extends HttpServlet {
                 //Redirecting admin to admin login page
                 response.sendRedirect("admin-login.jsp");
             }
-        } catch (Exception e) {
+        } catch (IOException | SQLException e) {
             System.out.println(e);
         }
     }

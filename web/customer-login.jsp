@@ -11,7 +11,6 @@
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
         <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-        <script src="js/simpleCart.min.js"></script>
         <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
@@ -38,27 +37,6 @@
                             </div>
                         </nav>
                     </div>
-                    <div class="top_nav_right">
-                        <div class="cart box_1">
-                            <a href="checkout.jsp"> 
-                            <%
-                                ResultSet resultCount = DatabaseConnection.getResultFromSqlQuery("select count(*) from tblcart where customer_id='" + session.getAttribute("id") + "'");
-                                resultCount.next();
-                                int count = resultCount.getInt(1);
-                            %>
-                            <h3>
-                                <div class="total">
-                                    <i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>
-                                    (
-                                    <%=count%>
-                                    items )
-                                </div>
-                            </h3>
-                        </a>
-                        <p>
-                            <a href="javascript:;" class="simpleCart_empty">Empty Cart</a>
-                        </p>
-                    </div>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -67,10 +45,6 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content modal-info">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"
-                            aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
                 </div>
                 <div class="modal-body modal-spa">
                     <div class="login-grids">

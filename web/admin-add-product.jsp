@@ -61,7 +61,7 @@
                                         <label>MRP Price</label> <input class="form-control" type="number" name="mprice" required/>
                                     </div>
                                     <div class="form-group">
-                                        <label>Status</label> 
+                                        <label>Status</label>
                                         <select class="form-control" name="status" required>
                                             <option>Active</option>
                                             <option>In-Active</option>
@@ -75,7 +75,7 @@
                                         <label>Attach Product Image</label> <input type="file" name="uploadLogo" required/>
                                     </div>
 
-                                    <button type="submit" class="btn btn-success" onclick="return confirm('Are you sure Do you want to add this product?');">Add Product</button>
+                                    <button type="submit" class="btn btn-success" onclick="return confirm('Do you want to add this product?');">Add Product</button>
                                     <button type="reset" class="btn btn-danger">Reset</button>
                                 </form>
                             </div>

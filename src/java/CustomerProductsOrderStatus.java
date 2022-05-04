@@ -1,8 +1,7 @@
-
-
 import com.connection.DatabaseConnection;
 import java.io.IOException;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/CustomerProductsOrderStatus")
 public class CustomerProductsOrderStatus extends HttpServlet {
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
             int statusMode = 0;
@@ -33,8 +33,7 @@ public class CustomerProductsOrderStatus extends HttpServlet {
                 //Sending response back to admin-all-orders.jsp page
                 response.sendRedirect("admin-all-orders.jsp");
             }
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (IOException | SQLException e) {
         }
     }
 
