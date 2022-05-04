@@ -77,7 +77,33 @@
                     <div class="login-grids">
                         <div class="login">
                             <div class="login-bottom">
-                                <h3>Sign up for free</h3>
+                                <script>
+                                    function validateform() {
+                                            var x = document.myform.email.value;
+                                            var atposition = x.indexOf("@");
+                                            var dotposition = x.lastIndexOf(".");
+                                            var password = document.myform.password.value;
+                                            const mobile = document.getElementById("mobile");
+                                            const pincode = document.getElementById("pincode");
+                                            
+                                            if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length) {
+                                                alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);
+                                                return false;
+                                            } else if (password.length<6) {
+                                                alert("Password must be at least 6 characters long");
+                                                return false;
+                                            } else if (!mobile.value.match(/^[1-9][0-9]{9}$/)) {
+                                                alert("Phone number must be 10 digits numeric only!");
+                                                mobile.focus();
+                                                return false;
+                                            } else if (!pincode.value.match(/^[1-9][0-9]{5}$/)) {
+                                                alert("Pincode must be 6 digits numeric only!");
+                                                pincode.focus();
+                                                return false;
+                                            }
+                                        }
+                                </script>
+                                <h3 style="color: red">Register now</h3>
                                 <%
                                     String success = (String) session.getAttribute("success-message");
                                     if (success != null) {
@@ -96,7 +122,7 @@
                                     <%
                                         }
                                     %>
-                                <form action="AddCustomer" method="post">
+                                <form name="myform" action="AddCustomer" method="post" onsubmit="return validateform()">
                                     <div class="sign-up">
                                         <h4>Your Name :</h4>
                                         <input type="text" placeholder="Your Name" required="" style="width: 680px;" name="name">
@@ -111,7 +137,7 @@
                                     </div>
                                     <div class="sign-up">
                                         <h4>Phone :</h4>
-                                        <input type="text" placeholder="Type here" required="" style="width: 680px;" name="mobile">
+                                        <input type="text" placeholder="Type here" required="" style="width: 680px;" name="mobile" id="mobile">
                                     </div>
                                     <div class="sign-up">
                                         <h4>Gender :</h4>
@@ -127,7 +153,7 @@
                                     </div>
                                     <div class="sign-up">
                                         <h4>Pin Code :</h4>
-                                        <input type="text" placeholder="Pincode" required="" style="width: 680px;" name="pincode">
+                                        <input type="text" placeholder="Pincode" required="" style="width: 680px;" name="pincode" id="pincode">
                                     </div>
                                     <div class="sign-up">
                                         <input type="submit" value="REGISTER NOW" style="width: 680px;">
