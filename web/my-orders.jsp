@@ -42,7 +42,7 @@
                         </nav>
                     </div>
                     <div class="top_nav_right">
-                        <div class="cart box_1">
+                        <div class="cart box_1" style="background: #f57967">
                             <a href="checkout.jsp"> 
                             <%
                                 //Getting count of products of cart
@@ -69,7 +69,7 @@
         </div>
         <div class="page-head">
             <div class="container">
-                <h3>My Orders</h3>
+                <h3 style="color: #f57967">My Orders</h3>
             </div>
         </div>
             <div class="container">

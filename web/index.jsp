@@ -40,7 +40,7 @@
                     </nav>
                 </div>
                 <div class="top_nav_right">
-                    <div class="cart box_1">
+                    <div class="cart box_1" style="background: #f57967">
                         <a href="checkout.jsp"> 
                         <%
                             //Getting all cart details of the customer
@@ -90,7 +90,7 @@
                             </div>
                             <div class="item-info-product ">
                                 <h4>
-                                    <a href=""><%=retriveProduct.getString("name")%></a>
+                                    <a href="" style="color: #f57967"><%=retriveProduct.getString("name")%></a>
                                 </h4>
                                 <h5>
                                     Category: <%=retriveProduct.getString("product_category")%>
@@ -101,7 +101,7 @@
                                     <del>Rs.<%=retriveProduct.getString("mrp_price")%></del> <br/>
                                     <span class="item_price">Rs.<%=retriveProduct.getString("price")%></span>
                                 </div>
-                                <input type="submit" value="Add to cart" class="btn btn-warning" onclick="return confirm('Are you sure Do you want to add this item in cart?');">
+                                <input type="submit" value="Add to cart" class="btn btn-warning" style="background: #f57967; border-color: #f57967" onclick="return confirm('Do you want to add this item in cart?');">
                             </div>
                         </div>
                     </div>

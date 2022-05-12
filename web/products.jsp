@@ -43,7 +43,7 @@
                     </div>
 
                     <div class="top_nav_right">
-                        <div class="cart box_1">
+                        <div class="cart box_1" style="background: #f57967">
                             <a href="checkout.jsp"> 
                             <%
                                 ResultSet resultCount = DatabaseConnection.getResultFromSqlQuery("select count(*) from tblcart where customer_id='" + session.getAttribute("id") + "'");
@@ -94,7 +94,7 @@
                                     <img src="uploads/<%=retriveProduct.getString("image_name")%>" alt="" class="pro-image-back"> <span class="product-new-top">New</span>
                                 </div>
                                 <div class="item-info-product ">
-                                    <h4>
+                                    <h4 style="color: #f57967">
                                         <%=retriveProduct.getString("name")%>
                                     </h4>
                                     <h5>
@@ -105,9 +105,8 @@
                                         <input type="hidden" name="mrp_price" value="<%=retriveProduct.getString("mrp_price")%>">
                                         <del>Rs.<%=retriveProduct.getString("mrp_price")%></del> <br/>
                                         <span class="item_price">Rs.<%=retriveProduct.getString("price")%></span>
-                                        <del><%=retriveProduct.getString("mrp_price")%> Rs.</del>
                                     </div>
-                                    <input type="submit" value="Add to cart" class="btn btn-warning" onclick="return confirm('Are you sure Do you want to add this item in cart?');">
+                                    <input type="submit" value="Add to cart" class="btn btn-warning" style="background-color: #f57967; border-color: #f57967" onclick="return confirm('Do you want to add this item in cart?');">
                                 </div>
                             </div>
                         </div>

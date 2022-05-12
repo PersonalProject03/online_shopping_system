@@ -77,13 +77,13 @@
                                             }
                                         }
                                 </script>
-                                <h3 style="color: red">Register now</h3>
+                                <h3 style="color: #f57967">Register now</h3>
                                 <%
                                     String success = (String) session.getAttribute("success-message");
                                     if (success != null) {
                                         session.removeAttribute("success-message");
                                 %>
-                                <div class='alert alert-success' id='success' style="width: 680px;">Customer
+                                <div class='alert alert-success' id='success' style="width: 680px; color: #f57967">Customer
                                     Register Successfully.</div>
                                     <%
                                         }
@@ -91,7 +91,7 @@
                                         if (fail != null) {
                                             session.removeAttribute("fail-message");
                                     %>
-                                <div class="alert alert-danger" id='danger' style="width: 680px;">Customer
+                                <div class="alert alert-danger" id='danger' style="width: 680px; color: #f57967">Customer
                                     Registration Fail,Please try again</div>
                                     <%
                                         }
@@ -99,23 +99,23 @@
                                 <form name="myform" action="AddCustomer" method="post" onsubmit="return validateform()">
                                     <div class="sign-up">
                                         <h4>Your Name :</h4>
-                                        <input type="text" placeholder="Your Name" required="" style="width: 680px;" name="name">
+                                        <input type="text" placeholder="Your Name" required="" style="width: 680px;" color: black" name="name">
                                     </div>
                                     <div class="sign-up">
                                         <h4>Email :</h4>
-                                        <input type="text" placeholder="Type here" required="" style="width: 680px;" name="email">
+                                        <input type="text" placeholder="Type here" required="" style="width: 680px;" color: black" name="email">
                                     </div>
                                     <div class="sign-up">
                                         <h4>Password :</h4>
-                                        <input type="password" placeholder="Password" required="" style="width: 680px;" name="password">
+                                        <input type="password" placeholder="Password" required="" style="width: 680px;" color: black" name="password">
                                     </div>
                                     <div class="sign-up">
                                         <h4>Phone :</h4>
-                                        <input type="text" placeholder="Type here" required="" style="width: 680px;" name="mobile" id="mobile">
+                                        <input type="text" placeholder="Type here" required="" style="width: 680px;" color: black" name="mobile" id="mobile">
                                     </div>
                                     <div class="sign-up">
                                         <h4>Gender :</h4>
-                                        <br> <select class="form-control" style="width: 680px;" name="gender">
+                                        <br> <select class="form-control" style="width: 680px;" color: black" name="gender">
                                             <option>Male</option>
                                             <option>Female</option>
                                         </select>
@@ -123,14 +123,14 @@
                                     <br>
                                     <div class="sign-up">
                                         <h4>Address :</h4>
-                                        <input type="text" placeholder="Type here" required="" style="min-height: 100px; width: 680px;" name="address">
+                                        <input type="text" placeholder="Type here" required="" style="min-height: 100px; width: 680px;" color: black" name="address">
                                     </div>
                                     <div class="sign-up">
                                         <h4>Pin Code :</h4>
-                                        <input type="text" placeholder="Pincode" required="" style="width: 680px;" name="pincode" id="pincode">
+                                        <input type="text" placeholder="Pincode" required="" style="width: 680px;" color: black" name="pincode" id="pincode">
                                     </div>
                                     <div class="sign-up">
-                                        <input type="submit" value="REGISTER NOW" style="width: 680px;">
+                                        <input type="submit" value="Register Now" style="width: 680px;">
                                     </div>
                                 </form>
                             </div>

@@ -47,7 +47,7 @@
                         </nav>
                     </div>
                     <div class="top_nav_right">
-                        <div class="cart box_1">
+                        <div class="cart box_1" style="background: #f57967">
                             <a href="checkout.jsp"> <%
                                 ResultSet resultCount = DatabaseConnection.getResultFromSqlQuery("select count(*) from tblcart where customer_id='" + session.getAttribute("id") + "'");
                                 resultCount.next();
@@ -72,7 +72,7 @@
 
         <div class="page-head">
             <div class="container">
-                <h3>Check Out</h3>
+                <h3 style="color: #f57967">Check Out</h3>
             </div>
         </div>
         <div class="checkout">

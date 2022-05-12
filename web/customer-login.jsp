@@ -50,7 +50,7 @@
                     <div class="login-grids">
                         <div class="login">
                             <div class="login-right">
-                                <h3>Sign in with your account</h3>
+                                <h3 style="color: #f57967">Sign in with your account</h3>
                                 <%
                                     String credential = (String) session.getAttribute("credential");
                                     if (credential != null) {
@@ -63,23 +63,23 @@
                                 <form action="CustomerLogin" method="post">
                                     <div class="sign-in">
                                         <h4>Email :</h4>
-                                        <input type="text" value="" style="width: 680px;" required=""
+                                        <input type="text" value="" style="width: 680px;" color: black" required=""
                                                name="email">
                                     </div>
                                     <div class="sign-in">
                                         <h4>Password :</h4>
-                                        <input type="password" value="" style="width: 680px;"
+                                        <input type="password" value="" style="width: 680px; color: black""
                                                required="" name="password">
                                     </div>
                                     <div class="sign-in">
-                                        <input type="submit" value="SIGNIN" style="width: 680px;">
+                                        <input type="submit" value="Login" style="width: 680px;">
                                     </div>
                                 </form>
                             </div>
                             <div class="clearfix"></div>
                         </div>
                         <p>
-                            <a href="customer-register.jsp">New to Smart Shop? Create an account</a>
+                            <a href="customer-register.jsp">Don't have an account? Register Here</a>
                         </p>
                     </div>
                 </div>
