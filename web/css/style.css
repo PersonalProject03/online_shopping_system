@@ -1274,10 +1274,12 @@ h2.resp-accordion {
 .men-pro-item {
     position: relative;
     box-shadow: 0px 0px 15px 0px #D6D6D6;
+    height: 500px;
     padding-bottom: 20px;
 }
 .men-thumb-item {
     position: relative;
+    height: 250px;
 }
 .item-info-product {
     text-align: center;
