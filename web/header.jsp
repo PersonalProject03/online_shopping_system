@@ -7,7 +7,7 @@
             <%
                 if ((String) session.getAttribute("name") != null) {
             %>
-        <li class="menu__item"><a class="menu__link" style="color: white; background: #31595a">Welcome, ${name}</a></li>
+        <li class="menu__item"><a class="menu__link" style="color: white; background: #31595a">Welcome, <i><b><u>${name}</u></b></i></a></li>
             <%
                 } if ((String) session.getAttribute("name") != null) {
             %>
