@@ -40,7 +40,7 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="panel panel-danger">
-                            <div class="panel-heading">Admin Login</div>
+                            <div class="panel-heading"><strong>Admin Login</strong></div>
                             <div class="panel-body">
                                 <%
                                     //Connecting to the database
@@ -57,10 +57,10 @@
                                 %>
                                 <form action="AdminLogin" method="post">
                                     <div class="form-group">
-                                        <label>Email Id.:</label> <input type="text" name="email" class="form-control">
+                                        <label style="color: #f57967">Email:</label> <input type="text" name="email" class="form-control">
                                     </div>
                                     <div class="form-group">
-                                        <label>Password.:</label> <input type="password" name="upass" class="form-control">
+                                        <label style="color: #f57967">Password:</label> <input type="password" name="upass" class="form-control">
                                     </div>
                                     <input type="submit" value="Admin Login" class="btn btn-primary">
                                     <input type="reset" value="Clear" class="btn btn-danger">
