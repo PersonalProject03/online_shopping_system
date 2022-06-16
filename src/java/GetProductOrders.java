@@ -72,7 +72,7 @@ public class GetProductOrders extends HttpServlet {
                 //Sending response back to the user/customer
                 String message = "Thank you for your order.";
                 hs.setAttribute("success", message);
-                response.sendRedirect("checkout.jsp");
+                response.sendRedirect("ordersuccess.jsp");
             } else {
                 response.sendRedirect("checkout.jsp");
             }

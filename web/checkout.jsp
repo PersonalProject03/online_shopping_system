@@ -252,14 +252,11 @@
                 <%
                 } else {
                 %>
-                <center>
-                    <strong>Thanks for giving order.</strong>
-                </center>
                 <%
                     if (index == 0) {
                 %>
                 <center>
-                    <strong>There is no item(s) in your Cart.</strong>
+                    <strong>There is no item(s) in your Cart.<br> Continue shopping by adding items to the chart.</strong>
                 </center>
                 <%
                     }
