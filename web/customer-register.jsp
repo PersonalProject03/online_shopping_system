@@ -137,7 +137,7 @@
                             <div class="clearfix"></div>
                         </div>
                         <p>
-                            <a href="customer-login.jsp">Existing Customer? Log In</a>
+                            Existing Customer? <a href="customer-login.jsp"><b>Log In</b></a>
                         </p>
                     </div>
                 </div>

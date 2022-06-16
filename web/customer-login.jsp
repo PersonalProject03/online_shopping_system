@@ -79,7 +79,7 @@
                             <div class="clearfix"></div>
                         </div>
                         <p>
-                            <a href="customer-register.jsp">Don't have an account? Register Here</a>
+                            Don't have an account? <a href="customer-register.jsp"><b>Register Here<b></a>
                         </p>
                     </div>
                 </div>
