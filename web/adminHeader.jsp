@@ -6,7 +6,8 @@
             <div class="col-md-12">
                 <div class="navbar-collapse collapse ">
                     <ul id="menu-top" class="nav navbar-nav navbar-right">
-                        <li><a href="dashboard.jsp">Home</a></li>
+                        <img src="https://i.ibb.co/gFt8k3c/Frame-1.png" alt="logo" style="float: left;width: 80px;height: 60px;" />
+                        <li><a href="dashboard.jsp">Simple Shopping</a></li>
                         <li><a href="admin-add-product.jsp">Add Product</a></li>
                         <li><a href="admin-view-product.jsp">View Products</a></li>
                         <li><a href="admin-all-orders.jsp">View All Orders</a></li>

@@ -81,9 +81,9 @@
                                 <th>Order No</th>
                                 <th>Product</th>
                                 <th>Quantity</th>
-                                <th>MRP($)</th>
-                                <th>Selling Price($)</th>
-                                <th>Total Price($)</th>
+                                <th>MRP(Rs)</th>
+                                <th>Selling Price(Rs)</th>
+                                <th>Total Price(Rs)</th>
                                 <th>Order Date</th>
                                 <th>Shipping Address</th>
                                 <th>Status</th>

@@ -27,8 +27,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="navbar-collapse collapse ">
-                            <ul id="menu-top" class="nav navbar-nav navbar-right">
-                                <li><a href="index.jsp">Home</a></li>
+                            <ul id="menu-top" class="nav navbar-nav navbar-left">
+                                <img src="https://i.ibb.co/gFt8k3c/Frame-1.png" alt="logo" style="float: left;width: 80px;height: 75px;" />
+                                <li><a href="index.jsp">Simple Shopping</a></li>
                             </ul>
                         </div>
                     </div>
