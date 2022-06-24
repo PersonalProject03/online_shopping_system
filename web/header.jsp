@@ -12,7 +12,7 @@
                 } if ((String) session.getAttribute("name") != null) {
             %>
         <li class="menu__item"><a class="menu__link" href="my-orders.jsp">My Orders</a></li>
-        <li class="menu__item"><a class="menu__link" href="logout.jsp">Logout</a></li>
+        <li class="menu__item"><a class="menu__link" href="logout.jsp" onclick="return confirm('Do you want to logout?');">Logout</a></li>
             <%
             } else {
             %>
