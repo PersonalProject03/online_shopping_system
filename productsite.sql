@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2022 at 01:04 PM
+-- Generation Time: Jul 08, 2022 at 08:16 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -76,6 +76,13 @@ CREATE TABLE `tblcustomer` (
   `pin_code` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `tblcustomer`
+--
+
+INSERT INTO `tblcustomer` (`id`, `address`, `added_date`, `email`, `gender`, `name`, `password`, `phone`, `pin_code`) VALUES
+(29, 'Chembur Goathan, Chembur, Mumbai', '2022-06-18 09:38:46', 'ninadpatil@gmail.com', 'Male', 'Ninad Patil', 'ninad1234', '8909876543', '400071');
+
 -- --------------------------------------------------------
 
 --
@@ -103,6 +110,13 @@ CREATE TABLE `tblorders` (
   `payment_mode` varchar(100) DEFAULT NULL,
   `payment_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tblorders`
+--
+
+INSERT INTO `tblorders` (`id`, `order_no`, `customer_name`, `mobile_number`, `email_id`, `address`, `address_type`, `pincode`, `image`, `product_name`, `quantity`, `product_price`, `product_selling_price`, `product_total_price`, `order_status`, `order_date`, `shipping_add`, `payment_mode`, `payment_id`) VALUES
+(37, 1001, 'Ninad Patil', '8909876543', 'ninadpatil@gmail.com', 'Chembur Goathan, Chembur, Mumbai', 'Home', '400071', '36-bz-bza-one-click-original-imag5b66azkp2tys.webp', 'Blazer Suit', 1, '12999', '6759', '6759', 'Pending', '2022-07-08 06:14:15', 'Chembur', 'COD', 1);
 
 -- --------------------------------------------------------
 
@@ -182,19 +196,19 @@ ALTER TABLE `tbladmin`
 -- AUTO_INCREMENT for table `tblcart`
 --
 ALTER TABLE `tblcart`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT for table `tblcustomer`
 --
 ALTER TABLE `tblcustomer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `tblorders`
 --
 ALTER TABLE `tblorders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `tblproduct`
